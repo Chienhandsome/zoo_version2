@@ -20,6 +20,8 @@ import com.example.zoo_ver2.animal.Tiger;
 import com.example.zoo_ver2.animal.Wolf;
 
 import java.util.ArrayList;
+import android.util.Log;
+
 
 public class DongVat extends AppCompatActivity {
 
@@ -286,6 +288,12 @@ public class DongVat extends AppCompatActivity {
             dsLoai.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
+                    SaveData.saveZoo(DongVat.this, zoo);
+                    SaveData.saveLion(DongVat.this, lion);
+                    SaveData.saveTiger(DongVat.this, tiger);
+                    SaveData.saveWolf(DongVat.this, wolf);
+                    SaveData.saveSnake(DongVat.this, snake);
+                    SaveData.saveElephant(DongVat.this, elephant);
                     if (pos == 0){
                         loaiCanHienThi = "lion";
                     }
