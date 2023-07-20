@@ -35,9 +35,8 @@ public class ThongTinChiTiet extends AppCompatActivity {
     String tt = "";
     TextView ttLoai;
     ListView dsCaThe;
-    //ArrayList <Object> listCaThe;
-    ListView listCaThe;
     public static String ttCaThe = "";
+    public static String anhCaThe = "";
 
 
     @Override
@@ -95,35 +94,41 @@ public class ThongTinChiTiet extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
                 if (loaiCanHienThi.equals("lion")) {
-                    ttCaThe = "Tên: " + lionclone.get(pos).getName().toString() + "\n\nTuổi: " + lionclone.get(pos).getAge() +
-                            "\n\nID: " + lionclone.get(pos).getId() + "\n\nKhối lượng thức ăn: " + lionclone.get(pos).getMassOfFood() +
-                            "\n\nTình trạng sức khỏe: " + lionclone.get(pos).getHealth() + "\n\nLoại thức ăn: " + lionclone.get(pos).getTypeOfFood() +
-                            "\n\nNgày nhập: " + lionclone.get(pos).getDayImport();
+                    anhCaThe = "lion";
+                    ttCaThe = "Tên: " + lionclone.get(pos).getName().toString() + "\nTuổi: " + lionclone.get(pos).getAge() +
+                            "\nID: " + lionclone.get(pos).getId() + "\nKhối lượng thức ăn: " + lionclone.get(pos).getMassOfFood() +
+                            "\nTình trạng sức khỏe: " + lionclone.get(pos).getHealth() + "\nLoại thức ăn: " + lionclone.get(pos).getTypeOfFood() +
+                            "\nNgày nhập: " + lionclone.get(pos).getDayImport();
                 }
                 else if (loaiCanHienThi.equals("tiger")) {
-                    ttCaThe = "Tên: " + tigerclone.get(pos).getName().toString() + "\n\nTuổi: " + tigerclone.get(pos).getAge() +
-                            "\n\nID: " + tigerclone.get(pos).getId() + "\n\nKhối lượng thức ăn: " + tigerclone.get(pos).getMassOfFood() +
-                            "\n\nTình trạng sức khỏe: " + tigerclone.get(pos).getHealth() + "\n\nLoại thức ăn: " + tigerclone.get(pos).getTypeOfFood() +
-                            "\n\nNgày nhập: " + tigerclone.get(pos).getDayImport();
+                    anhCaThe = "tiger";
+                    ttCaThe = "Tên: " + tigerclone.get(pos).getName().toString() + "\nTuổi: " + tigerclone.get(pos).getAge() +
+                            "\nID: " + tigerclone.get(pos).getId() + "\nKhối lượng thức ăn: " + tigerclone.get(pos).getMassOfFood() +
+                            "\nTình trạng sức khỏe: " + tigerclone.get(pos).getHealth() + "\nLoại thức ăn: " + tigerclone.get(pos).getTypeOfFood() +
+                            "\nNgày nhập: " + tigerclone.get(pos).getDayImport();
                 }
                 else if (loaiCanHienThi.equals("elephant")) {
-                    ttCaThe = "Tên: " + elephantclone.get(pos).getName().toString() + "\n\nTuổi: " + elephantclone.get(pos).getAge() +
-                            "\n\nID: " + elephantclone.get(pos).getId() + "\n\nKhối lượng thức ăn: " + elephantclone.get(pos).getMassOfFood() +
-                            "\n\nTình trạng sức khỏe: " + elephantclone.get(pos).getHealth() + "\n\nLoại thức ăn: " + elephantclone.get(pos).getTypeOfFood() +
-                            "\n\nNgày nhập: " + elephantclone.get(pos).getDayImport();
+                    anhCaThe = "elephant";
+                    ttCaThe = "Tên: " + elephantclone.get(pos).getName().toString() + "\nTuổi: " + elephantclone.get(pos).getAge() +
+                            "\nID: " + elephantclone.get(pos).getId() + "\nKhối lượng thức ăn: " + elephantclone.get(pos).getMassOfFood() +
+                            "\nTình trạng sức khỏe: " + elephantclone.get(pos).getHealth() + "\nLoại thức ăn: " + elephantclone.get(pos).getTypeOfFood() +
+                            "\nNgày nhập: " + elephantclone.get(pos).getDayImport();
                 }
                 else if (loaiCanHienThi.equals("wolf")) {
-                    ttCaThe = "Tên: " + wolfclone.get(pos).getName().toString() + "\n\nTuổi: " + wolfclone.get(pos).getAge() +
-                            "\n\nID: " + wolfclone.get(pos).getId() + "\n\nKhối lượng thức ăn: " + wolfclone.get(pos).getMassOfFood() +
-                            "\n\nTình trạng sức khỏe: " + wolfclone.get(pos).getHealth() + "\n\nLoại thức ăn: " + wolfclone.get(pos).getTypeOfFood() +
-                            "\n\nNgày nhập: " + wolfclone.get(pos).getDayImport();
+                    anhCaThe = "wolf";
+                    ttCaThe = "Tên: " + wolfclone.get(pos).getName().toString() + "\nTuổi: " + wolfclone.get(pos).getAge() +
+                            "\nID: " + wolfclone.get(pos).getId() + "\nKhối lượng thức ăn: " + wolfclone.get(pos).getMassOfFood() +
+                            "\nTình trạng sức khỏe: " + wolfclone.get(pos).getHealth() + "\nLoại thức ăn: " + wolfclone.get(pos).getTypeOfFood() +
+                            "\nNgày nhập: " + wolfclone.get(pos).getDayImport();
                 }
                 else if (loaiCanHienThi.equals("snake")) {
-                    ttCaThe = "Tên: " + snakeclone.get(pos).getName().toString() + "\n\nTuổi: " + snakeclone.get(pos).getAge() +
-                            "\n\nID: " + snakeclone.get(pos).getId() + "\n\nKhối lượng thức ăn: " + snakeclone.get(pos).getMassOfFood() +
-                            "\n\nTình trạng sức khỏe: " + snakeclone.get(pos).getHealth() + "\n\nLoại thức ăn: " + snakeclone.get(pos).getTypeOfFood() +
-                            "\n\nNgày nhập: " + snakeclone.get(pos).getDayImport();
+                    anhCaThe = "snake";
+                    ttCaThe = "Tên: " + snakeclone.get(pos).getName().toString() + "\nTuổi: " + snakeclone.get(pos).getAge() +
+                            "\nID: " + snakeclone.get(pos).getId() + "\nKhối lượng thức ăn: " + snakeclone.get(pos).getMassOfFood() +
+                            "\nTình trạng sức khỏe: " + snakeclone.get(pos).getHealth() + "\nLoại thức ăn: " + snakeclone.get(pos).getTypeOfFood() +
+                            "\nNgày nhập: " + snakeclone.get(pos).getDayImport();
                 }
+
                 Intent intent = new Intent(ThongTinChiTiet.this, HienThiThongTinCaThe.class);
                 startActivity(intent);
             }

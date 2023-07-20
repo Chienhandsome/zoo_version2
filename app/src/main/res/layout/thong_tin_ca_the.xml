@@ -7,22 +7,25 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/anh_ca_the"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
+            android:scaleType="centerInside"
             app:srcCompat="@drawable/bg" />
 
         <TextView
             android:id="@+id/tt_ca_the"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="44dp"
+            android:gravity="bottom"
             android:text="TextView"
             android:textColor="#000000"
             android:textSize="24sp" />

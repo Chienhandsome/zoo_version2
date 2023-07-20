@@ -12,6 +12,7 @@
     <string name="nothing_entered" />
     <string name="hint_phonenumber" />
     <string name="enter_your_text" />
+    <string name="th_ng_tin_c_p_nh_t_s_th">Thông tin cập nhật sở thú</string>
     <string-array name="option_array">
         <item>Thêm Động Vật</item>
         <item>Xóa Động Vật</item>

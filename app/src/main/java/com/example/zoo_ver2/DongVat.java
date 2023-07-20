@@ -41,6 +41,7 @@ public class DongVat extends AppCompatActivity {
     static ArrayList<Elephant> elephant;
     public static String info = "";
     public static String loaiCanHienThi = "";
+    public static String[] tapHopID = new String[1000] ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
