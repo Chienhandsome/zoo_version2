@@ -25,7 +25,8 @@ public class TrangChu extends AppCompatActivity {
     ImageView them;
     ImageView xuat;
     ImageView trangChu;
-    TextView thongTin;
+    TextView hienThiSlCathe;
+    TextView hienThiSlLoai;
     String tt="";
 
     ArrayList<String> opt = new ArrayList<String>();
@@ -41,7 +42,8 @@ public class TrangChu extends AppCompatActivity {
         dongVat = findViewById(R.id.dongVat);
         banDo = findViewById(R.id.banDo);
         trangChu = findViewById(R.id.trangChu);
-        thongTin = findViewById(R.id.thongTin);
+        hienThiSlCathe = findViewById(R.id.hienThiSlCathe);
+        hienThiSlLoai = findViewById(R.id.hienThiSlLoai);
 
         dongVat.setOnClickListener(view -> {
             Intent intent = new Intent(this, DongVat.class);
